@@ -385,10 +385,24 @@
     -->
     <integer name="config_longPressOnHomeBehavior">2</integer>
 
+<<<<<<< HEAD
     <!-- Whether the display blanks itself when transitioning from a doze to a non-doze state -->
     <bool name="config_displayBlanksAfterDoze">true</bool>
 
     <!-- Do the battery/notification LEDs support pulsing?
          Used to decide if we show pulse settings -->
     <bool name="config_ledCanPulse">true</bool>
+=======
+    <!-- The list absolute paths of jar/apk files containing the device specific handlers,
+         delimited by File.pathSeparator, which defaults to ":" on Android -->
+    <string-array name="config_deviceKeyHandlerLibs" translatable="false">
+        <item>/system/priv-app/OnePlusParts/OnePlusParts.apk</item>
+    </string-array>
+
+    <!-- Full qualified name of the class that implements
+         com.android.internal.os.DeviceKeyHandler interface. -->
+    <string-array name="config_deviceKeyHandlerClasses" translatable="false">
+        <item>com.oneplus.parts.KeyHandler</item>
+    </string-array>
+>>>>>>> 0944986... op3: Introduce Parts
 </resources>
