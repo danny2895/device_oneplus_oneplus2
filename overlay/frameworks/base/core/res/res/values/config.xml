@@ -403,4 +403,7 @@
     <string-array name="config_deviceKeyHandlerClasses" translatable="false">
         <item>com.oneplus.parts.KeyHandler</item>
     </string-array>
+
+    <!-- Whether doze feature is enabled by default in settings. -->
+    <bool name="config_doze_enabled_by_default">false</bool>
 </resources>
