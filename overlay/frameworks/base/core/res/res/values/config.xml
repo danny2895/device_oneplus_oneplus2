@@ -373,9 +373,6 @@
     <!-- Button backlight -->
     <bool name="config_deviceHasVariableButtonBrightness">true</bool>
 
-    <!-- Disable button backlight settings. -->
-    <integer name="config_buttonBrightnessSettingDefault">0</integer>
-
     <!-- Control the behavior when the user long presses the home button.
             0 - Nothing
             1 - Launch all apps intent
@@ -406,4 +403,11 @@
 
     <!-- Whether doze feature is enabled by default in settings. -->
     <bool name="config_doze_enabled_by_default">false</bool>
+
+    <!-- The component name, flattened to a string, for the default autofill service
+         to  enabled for an user. This service must be trusted, as it can be activated
+         without explicit consent of the user. If no autofill service with the
+          specified name exists on the device, autofill will be disabled by default.
+    -->
+    <string name="config_defaultAutofillService" translatable="false">com.google.android.gms/.autofill.service.AutofillService</string>
 </resources>
